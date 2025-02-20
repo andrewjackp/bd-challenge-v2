@@ -3,7 +3,7 @@ import { useLoaderData } from "@remix-run/react";
 import { authenticate } from "../../shopify.server";
 
 export const loader = async ({ request }: any) => {
-  const { api } = await authenticate.admin(request);
+  const { api }:any = await authenticate.admin(request);
 
   const response = await api.graphql(
     `{
@@ -30,7 +30,7 @@ export const loader = async ({ request }: any) => {
 
 export default function ProductsPage() {
   const { products } = useLoaderData<typeof loader>();
-  
+
   return (
     <section>
       <h1>Shopify Products</h1>

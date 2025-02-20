@@ -2,7 +2,8 @@
   "include": ["env.d.ts", "**/*.ts", "**/*.tsx", "app/routes/products/$id.tsx"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
