@@ -3,7 +3,7 @@ import { useLoaderData } from "@remix-run/react";
 import { authenticate } from "../shopify.server";
 
 export const loader = async ({ request, params }: any) => {
-  const { admin } = await authenticate(request);
+  const { admin } = await (request);
   const api = admin.api;
 
   const response = await api.graphql(

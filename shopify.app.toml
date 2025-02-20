@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "4d08679929ad853d274db3eee24057b9"
-application_url = "https://argue-ceiling-disputes-forwarding.trycloudflare.com"
+application_url = "https://consensus-bg-whenever-crown.trycloudflare.com"
 embedded = true
 name = "my-test-app"
 handle = "my-test-app-1350"
@@ -15,9 +15,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://argue-ceiling-disputes-forwarding.trycloudflare.com/auth/callback",
-  "https://argue-ceiling-disputes-forwarding.trycloudflare.com/auth/shopify/callback",
-  "https://argue-ceiling-disputes-forwarding.trycloudflare.com/api/auth/callback"
+  "https://consensus-bg-whenever-crown.trycloudflare.com/auth/callback",
+  "https://consensus-bg-whenever-crown.trycloudflare.com/auth/shopify/callback",
+  "https://consensus-bg-whenever-crown.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

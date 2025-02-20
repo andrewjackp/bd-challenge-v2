@@ -23,14 +23,14 @@ export const loader = async ({ request }: any) => {
     }`
   );
 
-  const products = response?.data?.products?.edges?.map(({ node }) => node) || [];
+  const products = response?.data?.products?.edges?.map(({ node }:any) => node) || [];
 
   return json({ products });
 };
 
 export default function ProductsPage() {
   const { products } = useLoaderData<typeof loader>();
-
+  
   return (
     <section>
       <h1>Shopify Products</h1>
