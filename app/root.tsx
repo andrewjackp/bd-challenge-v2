@@ -1,5 +1,6 @@
 import {
   Links,
+  Link,
   Meta,
   Outlet,
   Scripts,
@@ -21,7 +22,18 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        
+        <header>
+          <nav>
+            <Link to="/" rel="home">Home</Link>
+            <Link to="/products" rel="products">Products</Link>
+          </nav>
+        </header>
+
+        <main>
+          <Outlet />
+        </main>
+
         <ScrollRestoration />
         <Scripts />
       </body>

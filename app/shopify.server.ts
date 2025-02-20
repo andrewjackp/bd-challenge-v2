@@ -25,6 +25,12 @@ const shopify = shopifyApp({
     : {}),
 });
 
+// get data from server
+// start with basic connection
+export function getProducts() {
+  return "all products";
+}
+
 export default shopify;
 export const apiVersion = ApiVersion.January25;
 export const addDocumentResponseHeaders = shopify.addDocumentResponseHeaders;
