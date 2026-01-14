@@ -30,3 +30,19 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model Review {
+  id         String   @id @default(cuid())
+  shop       String
+  productGid String   // "gid://shopify/Product/123"
+  rating     Int      // 1..5
+  message    String
+
+  // Optional but useful:
+  customerName  String?
+  customerEmail String?
+  createdAt     DateTime @default(now())
+
+  @@index([shop, productGid])
+  @@index([shop, createdAt])
+}
