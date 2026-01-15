@@ -1,0 +1,36 @@
+<div class="review-embed" data-product-id="{{ product.id }}">
+  <h3>Reviews</h3>
+
+  <div class="review-embed__list" aria-live="polite"></div>
+
+  <form class="review-embed__form">
+    <label>
+      Rating
+      <select name="rating" required>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
+    </label>
+
+    <label>
+      Message
+      <textarea name="message" required minlength="2"></textarea>
+    </label>
+
+    <button type="submit">Submit review</button>
+    <p class="review-embed__status" role="status"></p>
+  </form>
+</div>
+
+<script src="{{ 'review-embed.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Review embed",
+  "target": "section",
+  "settings": []
+}
+{% endschema %}
