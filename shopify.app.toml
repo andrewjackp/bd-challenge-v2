@@ -25,3 +25,10 @@ redirect_urls = [
 
 [pos]
 embedded = false
+
+[app_proxy]
+prefix = "apps"
+subpath = "reviews-proxy"
+url = "https://{{app_url}}/apps/reviews-proxy"
+
+
