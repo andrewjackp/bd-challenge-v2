@@ -27,6 +27,7 @@ export default function App() {
           <nav>
             <Link to="/" rel="home">Home</Link>
             <Link to="/products" rel="products">Products</Link>
+            <Link to="/reviews" rel="reviews">Reviews</Link>
           </nav>
         </header>
 
